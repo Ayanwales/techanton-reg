@@ -23,6 +23,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
+          <p>&copy;2022 Agrotech and sons. All rights reserved</p>
       </footer>
     </>
   )
