@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+      <h1>Welcome</h1>
+    </>
   )
 }
 

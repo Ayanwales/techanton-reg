@@ -41,7 +41,8 @@ const Register = () => {
         navigate('/Login')
     }
   return (
-    <>
+<>
+    <main className='main-body'>
         <div className='register-header'>
             <h1 className='reg-header'> Create an Account</h1>
         </div>
@@ -150,7 +151,8 @@ const Register = () => {
                 <Link to='/login'>Sign in</Link>
             </div>
         </div>
-    </>
+    </main>
+</>
   )
 }
 export default Register;

@@ -5,7 +5,9 @@
 }
 .nav{
     height:60px;
+    width: 800px;
     display:flex;
+    margin:auto;
     justify-content: space-between;
 }
 .nav-class{
@@ -35,6 +37,10 @@ place-items: flex-start;
     font-size: 14px;
     color: blue;
     padding: 20px;
+}
+.main-body{
+    width: 800px;
+    margin:auto;
 }
 .register-header{
     text-align: center;
@@ -180,7 +186,7 @@ footer{
     width: 800px;
     padding-bottom: 16px;
     display: flex;
-    margin: 20px;
+    margin: auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -211,4 +217,16 @@ footer p{
     font-weight: bold;
     text-align: center;
     color: blue;
+}
+.error{
+    display: block;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.error-message{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color:red;
 }
