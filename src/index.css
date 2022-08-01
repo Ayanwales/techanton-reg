@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav{
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+}
+.nav-class{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.image-logo{
+border-radius: 50%;
+place-items: flex-start;
+}
+.header-logo{
+    font-size: 16px;
+    color:lightgreen;
+    font-weight: bold;   
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 15px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 14px;
+    color: blue;
+    padding: 20px;
+}
+.register-header{
+    text-align: center;
+    color:black;
+    margin: 10px;
+}
+.reg-header{
+    font-size: 18px;
+    font-weight: bold;
+}
+.reg-form{
+    width: 800px;
+    margin: 20px;
+
+}
+.form-control{
+    display: flex;
+    margin: 30px;
+    gap: 30px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    align-items: center;
+}
+
+.first-form,.second-form,.third-form,.fourth-form,.fifth-form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.first-form div,.second-form div,.third-form div{
+    align-items: center;
+    display: block;
+    width: 100%;
+}
+.first-form div input,.second-form div input,.third-form div input,.fourth-form div input{
+    border-radius: 2px;
+    border:0;
+    outline: 0;
+    padding: 10px;
+    border-bottom: 2px solid lightseagreen;
+}
+.first-form div input:focus,.second-form div input:focus,.third-form div input:focus,.fourth-form div input:focus{
+    outline:0;
+    border: 0;
+    background-color:lightgreen;
+    border-bottom: 1px solid grey;
+}
+.first-form div input::placeholder,.second-form div input::placeholder,.third-form div input::placeholder,.fourth-form div input::placeholder{
+    font-size:12px;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+}
+.first-form div label,.second-form div label,.third-form div label,.fourth-form div label,.fifth-form div label{
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    color:lightgreen;
+}
+.fourth-form,.fifth-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+}
+.fourth-form div,.fifth-form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.fourth-form div select{
+    font-size: 14px;
+    color:lightgreen;
+    border-radius: 2px;
+    outline: 0;
+    line-height:1;
+    font-weight:300;
+    border:1px solid lightseagreen;
+}
+.fifth-form p{
+    font-size: 14px;
+    font-weight: bold;
+    color: lightgreen;
+    text-align: left;
+    text-transform: capitalize;
+}
+.checkbox{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.checkbox label{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: none;
+    color: blue;
+    padding: 20px;
+}
+.btn-form{
+    background-color: blue;
+    font-size: 16px;
+    font-weight: 400px;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    margin-left: 250px;
+    padding :15px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.btn-form a{
+    text-decoration: none;
+    color:white;
+}
+.bottom-group{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.bottom-group p{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.bottom-group a{
+    text-decoration: none;
+    color: green;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bottom-group a:hover{
+    color:blue;
+}
+footer{
+    width: 800px;
+    padding-bottom: 16px;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+footer ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+   
+}
+ .social-icons{
+    margin-bottom: 2rem;
+}
+.social-icons li a i{
+    color:blue;
+}
+.social-icons li a i:hover{
+    color:teal;
+}
+footer p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
