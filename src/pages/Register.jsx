@@ -23,6 +23,7 @@ const Register = () => {
 
     const [state, setState] = React.useState(initialValues);
     const [show, setShow] = React.useState(false)
+    const [eye, setEye] = React.useState(false)
     const handleChange = (e)=>{
         const value = e.target.type === "checkbox" ?
         e.target.checked : e.target.value;
@@ -52,35 +53,41 @@ const Register = () => {
                     <div>
                         <label>Username</label>
                         <input type='text' name="username" value={state.username} onChange={handleChange} placeholder=" Enter username" required/>
+                        <i className='fas fa-user-alt'></i>
                     </div>
                     <div>
                         <label>First Name</label>
                         <input type='text' name="firstname" value={state.firstname} onChange={handleChange} placeholder=" Enter firstname" required/>
+                        <i className='fas fa-user-alt'></i>
                     </div>
                     <div>
                         <label>Last Name</label>
                         <input type='text' name="lastname" value={state.lastname} onChange={handleChange} placeholder="Enter lastname" required/>
+                        <i className='fas fa-user-alt'></i>
                     </div>
                 </div>
                 <div className='second-form'>
                     <div>
                         <label>Occupation</label>
                         <input type='text' name="occupation" value={state.occupation} onChange={handleChange} placeholder="software Developer" required/>
+                        <i className='fas fa-tasks'></i>
                     </div>
                     <div>
                         <label>Email Address</label>
                         <input type='email' name="email" value={state.email} onChange={handleChange} placeholder="example@gmail.com" required/>
+                        <i className='fa-solid fa-envelope'></i>
                     </div>
                     <div>
                         <label>Password</label>
                         <input type = {show ? 'text':'Password'} name="password" value={state.password} onChange={handleChange} placeholder="Enter password" required/>
-                        <button className='btn-password' onClick={()=>setShow((prev)=>!prev)}>Show</button>
+                        {show ? <i className='fa-solid fa-eye-slash' onClick={()=>setShow((prev)=>!prev)}></i> : <i className='fa-solid fa-eye'onClick={()=>setShow((prev)=>!prev)}></i>}
                     </div>
                 </div>
                 <div className='third-form'>
                     <div>
                         <label>Confirm Password</label>                
                         <input type= {show ? 'text' : 'password'} name="confirm" value={state.confirm} onChange={handleChange} placeholder="Confirmed password" required/>
+                        {eye ? <i className='fa-solid fa-eye-slash' onClick={()=>setEye((prev)=>!prev)}></i> : <i className='fa-solid fa-eye'onClick={()=>setShow((prev)=>!prev)}></i>}
                     </div>
                     <div>
                         <label>Phone Number</label>

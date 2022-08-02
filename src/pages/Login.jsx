@@ -36,15 +36,17 @@ const Login = () => {
                         <div>
                             <label>Username</label>
                             <input type='text' name="username" value={state.username} onChange={handleChange} placeholder=" Enter username" required/>
+                            <i className='fas fa-user-alt'></i>
                         </div>
                         <div>
                             <label>Email Address</label>
                             <input type='email' name="email" value={state.email} onChange={handleChange} placeholder="example@gmail.com" required/>
+                            <i className='fa-solid fa-envelope'></i>
                         </div>
                         <div>
                             <label>Password</label>
                             <input type = {show ? 'text':'Password'} name="password" value={state.password} onChange={handleChange} placeholder="Enter password" required/>
-                            <button className='btn-password' onClick={()=>setShow((prev)=>!prev)}>Show</button>
+                            {show ? <i className='fa-solid fa-eye-slash' onClick={()=>setShow((prev)=>!prev)}></i> : <i className='fa-solid fa-eye'onClick={()=>setShow((prev)=>!prev)}></i>}
                         </div>
                     </div>
                     <div className='checkbox'>

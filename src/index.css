@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .nav{
-    height:60px;
-    width: 800px;
+    height:80px;
+    width: 600px;
     display:flex;
     margin:auto;
     justify-content: space-between;
@@ -32,6 +32,31 @@ place-items: flex-start;
     justify-content: space-between;
     padding : 15px;
 }
+.hamburger i{
+    color: blue;
+    cursor: pointer;
+}
+.hamburger{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+/*@media screen and (max-width:200px){
+    .nav-menu{
+        display: block;
+    }
+    .hamburger{
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .hamburger i{
+        color: yellow;
+    }
+}*/
+.nav-menu{
+    display: none;
+}
 .nav-links a{
     text-decoration: none;
     font-size: 14px;
@@ -39,7 +64,8 @@ place-items: flex-start;
     padding: 20px;
 }
 .main-body{
-    width: 800px;
+    width: 600px;
+    height:600px;
     margin:auto;
 }
 .register-header{
@@ -52,13 +78,13 @@ place-items: flex-start;
     font-weight: bold;
 }
 .reg-form{
-    width: 800px;
+    width: 600px;
     margin: 20px;
 
 }
 .form-control{
     display: flex;
-    margin: 30px;
+    margin: auto;
     gap: 30px;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -114,6 +140,10 @@ place-items: flex-start;
     margin: 10px;
     align-items: center;
     gap: 10px;
+}
+.first-form div i,.second-form div i,.third-form div i{
+    margin-left: -30px;
+    cursor:pointer;
 }
 .fourth-form div select{
     font-size: 14px;
@@ -183,7 +213,7 @@ place-items: flex-start;
     color:blue;
 }
 footer{
-    width: 800px;
+    width: 600px;
     padding-bottom: 16px;
     display: flex;
     margin: auto;
@@ -226,7 +256,34 @@ footer p{
 }
 .error-message{
     font-size: 16px;
+    padding: 20px;
     font-weight: bold;
     text-align: center;
     color:red;
+}
+.error-message button{
+    padding: 20px;
+    width:30px;
+    margin-left:30px;
+}
+.header-class{
+    margin: auto;
+    width:600px;
+    display: block;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header-class h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+.header-class P{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
 }
